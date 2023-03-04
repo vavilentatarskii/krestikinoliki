@@ -49,54 +49,6 @@ def ask():
         return x, y
 ask()
 
-# num = 0
-# while True:
-#     num += 1
-#     game_spase()
-#     if num % 2 == 1:
-#         print(" Ходит крестик ")
-#     else:
-#         print(" Ходит нолик ")
-#     x, y = ask()
-#     if num % 2 == 1:
-#         field[x][y] = "X"
-#     else:
-#         field[x][y] = "0"
-#         break
-#     if num == 9:
-#         print(" Ничья ")
-#         break
-
-# def check_win():
-#     for i in range(3):
-#         symbols = []
-#         for j in range(3):
-#             symbols.append(field[i][j])
-#         if symbols == ["X", "X", "X"]:
-#             return True
-#
-#     for i in range(3):
-#         symbols = []
-#         for j in range(3):
-#             symbols.append(field[j][i])
-#         if symbols == ["X", "X", "X"]:
-#             return True
-#
-#     symbols = []
-#     for i in range(3):
-#         for j in range(3):
-#             symbols.append(field[i][i])
-#         if symbols == ["X", "X", "X"]:
-#             return True
-#
-#     symbols = []
-#     for i in range(3):
-#         for j in range(3):
-#             symbols.append(field[i][2-i])
-#         if symbols == ["X", "X", "X"]:
-#             return True
-#
-#     return False
 def check_win():
     win_cord = (((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)), ((2, 0), (2, 1), (2, 2)),
                 ((0, 2), (1, 1), (2, 0)), ((0, 0), (1, 1), (2, 2)), ((0, 0), (1, 0), (2, 0)),
